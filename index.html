@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Playbook-P5-TM02B</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+
+    <header>
+        <h1><span class="book-icon">📋</span> <strong>Playbook Sesión 2B 5to Primaria</strong></h1>
+        <div class="header-widgets">
+            <div class="timer-container">
+                <span id="timer">⏱️ 00:00</span>
+                <button id="startStop">Start</button>
+                <button id="reset">Reset</button>
+            </div>
+            <div class="theme-toggle">
+                <i class="fas fa-sun"></i>
+                <label class="switch">
+                    <input type="checkbox" id="theme-toggle-input">
+                    <span class="slider round"></span>
+                </label>
+                <i class="fas fa-moon"></i>
+            </div>
+        </div>
+    </header>
+
+    <div class="main-container">
+        <aside class="activity-list">
+            <h2>Actividades</h2>
+            <ul>
+                <li><a href="#activity-0">📝</a></li>
+                <li><a href="#activity-1">1</a></li>
+                <li><a href="#activity-2">2</a></li>
+                <li><a href="#activity-3">3</a></li>
+                <li><a href="#activity-4">4</a></li>
+                <li><a href="#activity-5">5</a></li>
+            </ul>
+
+            <div class="sidebar-info">
+                <p>💡 Cada actividad está cuidadosamente diseñada para involucrar a los estudiantes.</p>
+                <p>⏱️ Se proporcionan estimaciones de tiempo para cada actividad para ayudarle a mantener el rumbo.</p>
+            </div>
+        </aside>
+
+        <main class="content">
+            <div class="progress-bar">
+                <div class="progress"></div>
+            </div>
+
+            <button id="toggle-dialogues">Mostrar todos los diálogos</button>
+
+            <!-- SECCIÓN "DE UN VISTAZO" (ANTES ACTIVITY-0) -->
+            <div class="activity-card" id="activity-0">
+                <h2><span class="book-icon">📝</span> De un Vistazo: Sesión Gnius</h2>
+                <p class="overview-subtitle">Resumen rápido de objetivos, materiales y preparación para el facilitador.</p>
+                <div class="overview-table-container">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th style="width: 50%;">Objetivos, Tácticas y Entregable</th>
+                                <th style="width: 50%;">Materiales Específicos y Preparación Previa</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>
+                                    <strong>Objetivos:</strong>
+                                    <ul>
+                                        <li>Que los estudiantes repasen y consoliden los conceptos clave aprendidos (bucles, lógica, sensores, radio). Que trabajen en equipo para planificar, diseñar y programar un proyecto final integrador, eligiendo entre varias opciones propuestas. Finalmente, que prueben, mejoren y presenten su invención al resto de la clase.</li>
+                                    </ul>
+                                    <strong>Secuencia de Clase:</strong>
+                                    <ul>
+                                        <li><strong class="tactic-highlight">⚡ Saludo Interactivo con IA:</strong> Activación y personalización de la IA.</li>
+                                        <li><strong class="tactic-highlight">⚡ "I Can Statement" + Ejemplificación:</strong> Plantear el desafío final y dar ideas.</li>
+                                        <li><strong class="tactic-highlight">⚡ AI GYM:</strong> Repasar herramientas y guiar la planificación del proyecto.</li>
+                                        <li><strong class="tactic-highlight">⚡ Brain Spark:</strong> Planificación, construcción, prueba y depuración del proyecto.</li>
+                                        <li><strong class="tactic-highlight">⚡ Gnius STORM:</strong> "Feria de Invenciones" para presentar los proyectos finales.</li>
+                                    </ul>
+                                    <strong>Entregable Clave:</strong>
+                                    <ul>
+                                        <li>Un proyecto final funcional en la micro:bit, planificado y construido en equipo, que integra al menos tres conceptos diferentes de los vistos en el bootcamp (ej. sensores, radio, lógica, etc.).</li>
+                                    </ul>
+                                </td>
+                                <td>
+                                    <strong>Materiales Específicos:</strong>
+                                    <ul>
+                                        <li>Proyector o pantalla interactiva.</li>
+                                        <li>Conexión a internet estable.</li>
+                                        <li>Acceso a MakeCode (<a href="https://makecode.microbit.org/" target="_blank">https://makecode.microbit.org/</a>).</li>
+                                        <li>Chat "Agente Gnius" (Xolo) activo y funcionando.</li>
+                                        <li>Presentación de diapositivas (Diapositivas 1-11).</li>
+                                        <li>1 micro:bit por cada 2 estudiantes. Para proyectos con radio, se necesitarán al menos 2 micro:bits por equipo.</li>
+                                        <li>Computadoras o tabletas para programar.</li>
+                                    </ul>
+                                    <strong>Preparación Previa para ESTA Sesión:</strong>
+                                    <ol>
+                                        <li><strong>Revisión de Misión (Interna):</strong>
+                                            <ul>
+                                                <li>Verificar conexión a internet y funcionamiento de MakeCode.</li>
+                                                <li>Tener las micro:bits listas y con baterías.</li>
+                                                <li>Tener la presentación de diapositivas (1-11) lista y en orden.</li>
+                                            </ul>
+                                        </li>
+                                        <li><strong>Familiarización:</strong> Revisar el flujo de la sesión y estar preparado para asesorar sobre cualquiera de las ideas de proyecto propuestas.</li>
+                                    </ol>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+            <!-- FIN DE LA SECCIÓN "DE UN VISTAZO" -->
+
+            <div class="activity-card" id="activity-1">
+                <h2>⚡ Actividad 1: Saludo de I.A. con todos ⏰ 3 minutos</h2>
+                <p>Crear un ambiente de celebración y desafío para la sesión final.</p>
+                <div class="steps">
+                    <div class="step-card">
+                        <div class="step-content">
+                            <h3>Paso 1: Bienvenida e Instrucción ⏰ 1 minuto</h3>
+                            <p>(Proyectar Diapositiva 2) Da la bienvenida a los alumnos y guíalos para que activen a Xolo.</p>
+                        </div>
+                        <div class="collapsible">
+                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
+                            <div class="collapsible-content">
+                                <p class="dialogue assistant">¡Hola, inventores maestros! Vamos a activar por última vez a nuestro copiloto, Xolo. Por favor, salúdenlo en el chat y díganle su nombre y cuáles son sus gustos e intereses para empezar la misión final.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="step-card">
+                        <div class="step-content">
+                            <h3>Paso 2: Interacción con Xolo ⏰ 2 minutos</h3>
+                            <p>Monitorea la interacción y asegúrate de que todos reciban el saludo de Xolo.</p>
+                        </div>
+                        <div class="collapsible">
+                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
+                            <div class="collapsible-content">
+                                <p class="dialogue assistant">¡Fantástico! Xolo les da la bienvenida: "¡Hola, inventores maestros! Han llegado al final de nuestro viaje, pero es el comienzo del suyo como creadores. Hoy no seguirán un plan, ¡ustedes crearán el plan! Usarán todo lo que hemos aprendido, desde los LEDs hasta la radio, para construir un proyecto final que sea 100% suyo. ¡Es hora de mostrar su ingenio!"</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="activity-card" id="activity-2">
+                <h2>⚡ Actividad 2: I Can Statement + Ejemplificación ⏰ 7 minutos</h2>
+                <p>Presentar el desafío final y las opciones de proyecto para inspirar a los estudiantes.</p>
+                <div class="steps">
+                    <div class="step-card">
+                        <div class="step-content">
+                            <h3>Paso 1: Planteando el Desafío Final ⏰ 2 minutos</h3>
+                            <p>Explica la misión del día: crear un proyecto integrador.</p>
+                        </div>
+                        <div class="collapsible">
+                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
+                            <div class="collapsible-content">
+                                <p class="dialogue assistant">"Hoy es el día del proyecto final. Su misión es trabajar en su equipo de 2 para construir una invención que combine al menos <strong>tres conceptos diferentes</strong> que hemos visto. Pueden mezclar y combinar como quieran: sensores, botones, radio, sonidos, lógica... ¡todo vale!"</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="step-card">
+                        <div class="step-content">
+                            <h3>Paso 2: Ideas para Inspirar ⏰ 3 minutos</h3>
+                            <p>(Proyectar Diapositiva 4) Presenta las opciones de proyecto como ejemplos.</p>
+                        </div>
+                        <div class="collapsible">
+                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
+                            <div class="collapsible-content">
+                                <p class="dialogue assistant">"Para despertar su creatividad, aquí tienen algunas ideas. Pueden elegir una de estas o inventar la suya:
+                                    <ul>
+                                        <li><strong>El Podómetro Inteligente:</strong> Usa el sensor de agitación para contar pasos y los botones para mostrar el total o reiniciar.</li>
+                                        <li><strong>La Alarma Secreta:</strong> Usa el acelerómetro para detectar si alguien mueve un objeto. Al activarse, emite un sonido y envía una señal de radio a una micro:bit 'guardia'.</li>
+                                        <li><strong>El Juego de 'Pasa la Papa Caliente':</strong> Una micro:bit empieza un temporizador aleatorio. Al agitarla, envía la 'papa' por radio a otra. ¡Quien la tenga cuando el tiempo se acabe, pierde!</li>
+                                    </ul>"
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                     <div class="step-card">
+                        <div class="step-content">
+                            <h3>Paso 3: "I Can Statement" ⏰ 2 minutos</h3>
+                            <p>(Proyectar Diapositiva 3) Presenta el objetivo concreto de la sesión.</p>
+                        </div>
+                        <div class="collapsible">
+                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
+                            <div class="collapsible-content">
+                                <p class="dialogue assistant">"Hoy serán ingenieros de principio a fin. Al final de esta sesión, podrán decir: <strong>'Mi equipo planificó y construyó un proyecto funcional que integra múltiples sensores y salidas, y lo presentamos con orgullo a nuestros compañeros.'</strong>"</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="activity-card" id="activity-3">
+                <h2>⚡ Actividad 3: AI GYM ⏰ 5 minutos</h2>
+                <p>Guiar a los alumnos en la planificación de su proyecto con la ayuda de Xolo.</p>
+                <div class="steps">
+                    <div class="step-card">
+                        <div class="step-content">
+                            <h3>Paso 1: El Plan Maestro y la Caja de Herramientas ⏰ 5 minutos</h3>
+                            <p>(Proyectar Diapositiva 6 y 7) Pide a los equipos que respondan las preguntas de planificación y repasen sus herramientas con Xolo.</p>
+                        </div>
+                        <div class="collapsible">
+                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
+                            <div class="collapsible-content">
+                                <p class="dialogue assistant">¡Entremos al <strong>A.I. GYM</strong> para el plan final! Xolo nos recuerda: "¡Un gran proyecto necesita un gran plan! Antes de programar, respondan en equipo: <strong>1. ¿Qué hará su invención? 2. ¿Qué entradas usará? 3. ¿Qué salidas producirá?</strong> Recuerden su caja de herramientas: tienen `variables`, `lógica si...entonces`, `bucles` y hasta `funciones` para crear sus propios superpoderes. Díganle a Xolo qué proyecto eligieron y él les puede ayudar a esbozar un primer plan."</p>
+                                <pre class="dialogue assistant" style="color: #d32f2f;">// PLAN DE BLOQUES para Podómetro
+// Crear variable "pasos"
+
+AL INICIAR:
+    establecer "pasos" a 0
+
+AL AGITAR:
+    cambiar "pasos" por 1 // Sumar un paso
+
+AL PRESIONAR el botón A:
+    mostrar número ("pasos")
+
+AL PRESIONAR el botón B:
+    establecer "pasos" a 0
+    mostrar icono [Cara Feliz] // Reiniciado</pre>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="activity-card" id="activity-4">
+                 <h2>⚡ Actividad 4: Brain Spark ⏰ 20 minutos</h2>
+                <p>Fases de planificación, construcción y depuración del proyecto final.</p>
+                <div class="steps">
+                    <div class="step-card">
+                        <div class="step-content">
+                            <h3>Paso 1: Planificación en Equipo ⏰ 5 minutos</h3>
+                            <p>(Proyectar Diapositiva 8) Los equipos eligen su proyecto y definen su plan.</p>
+                        </div>
+                        <div class="collapsible">
+                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
+                            <div class="collapsible-content">
+                                <p class="dialogue assistant">¡Arranca el <strong>Brain Spark</strong> final! En sus equipos, discutan y elijan su proyecto. Usen las 3 preguntas del A.I. GYM para definir su plan. Pueden dibujarlo o escribirlo. ¡Tienen 5 minutos para tener un plan de acción claro!</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="step-card">
+                        <div class="step-content">
+                            <h3>Paso 2: Programación, Prueba y Depuración ⏰ 15 minutos</h3>
+                            <p>Los equipos construyen su proyecto en MakeCode, con el apoyo del profesor y Xolo.</p>
+                        </div>
+                        <div class="collapsible">
+                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
+                            <div class="collapsible-content">
+                                 <p class="dialogue assistant">¡Es hora de la acción! Abran MakeCode y empiecen a construir su invención. Xolo y yo seremos sus consultores. Si se atascan, ¡no duden en preguntar! Por ejemplo, si un equipo nos dice: '¡Xolo, nuestro contador de pasos suma de 5 en 5!', Xolo podría sugerir: '¡Interesante! Revisen la sensibilidad del bloque `al agitar`. Quizás un solo movimiento se está registrando varias veces. Podrían añadir una pequeña `pausa` después de sumar un paso para evitarlo.' ¡Prueben, fallen, mejoren y diviértanse!</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="activity-card" id="activity-5">
+                <h2>⚡ Actividad 5: Gnius STORM ⏰ 5 minutos</h2>
+                <p>Presentación de las invenciones finales en la "Feria de Invenciones".</p>
+                <div class="steps">
+                    <div class="step-card">
+                        <div class="step-content">
+                            <h3>Paso 1: La Feria de Invenciones ⏰ 4 minutos</h3>
+                            <p>(Proyectar Diapositiva 9) Cada equipo presenta su proyecto final.</p>
+                        </div>
+                        <div class="collapsible">
+                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
+                            <div class="collapsible-content">
+                                <p class="dialogue assistant">
+                                     ¡Llegó el momento del <strong>Gnius STORM</strong>! Bienvenidos a nuestra primera 'Feria de Invenciones'. Cada equipo tiene 1 minuto para presentar su proyecto. Deben decirnos: 1. El nombre creativo de su invención, 2. Hacernos una demostración en vivo, y 3. Contarnos cuál fue el mayor desafío que superaron. ¡Adelante, inventores!</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="step-card">
+                        <div class="step-content">
+                            <h3>Paso 2: Cierre Final ⏰ 1 minuto</h3>
+                            <p>(Proyectar Diapositiva 10 y 11) Cierre final del profesor y Xolo, celebrando los logros.</p>
+                        </div>
+                        <div class="collapsible">
+                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
+                            <div class="collapsible-content">
+                                <p class="dialogue assistant">
+                                    ¡Felicidades a todos! Miren estas increíbles invenciones. Han demostrado que no solo saben usar la tecnología, sino que pueden crear con ella. Xolo concluye: "Ha sido un honor increíble crear junto a ustedes. Lo que han aprendido aquí es solo el comienzo. Sigan siendo curiosos, sigan experimentando y nunca dejen de preguntarse '¿qué pasaría si...?'. ¡El futuro está esperando a que ustedes lo inventen!"
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
